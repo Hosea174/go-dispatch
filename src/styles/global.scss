@@ -90,6 +90,7 @@ body {
   font-size: $fs-body;
   font-family: $ff-body;
   background-color: $clr-primary-50;
+  // background-color: black;
 }
 
 // A elements that don't have a class get default styles
@@ -117,7 +118,8 @@ a {
 
 // Utility classes
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
+  padding-inline: $size-600;
   margin: 0 auto;
 }
 

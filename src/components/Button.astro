@@ -1,3 +1,8 @@
 ---
-import '../styles/components/buttons.scss'
+import "../styles/components/buttons.scss";
+
+
+const { text, icon, buttonStyle, class: className } = Astro.props;
 ---
+
+<button class={className} style={buttonStyle}>{text}<img src={icon} /></button>
