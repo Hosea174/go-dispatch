@@ -29,11 +29,20 @@ $fs-600: 2rem;
 $fs-500: 1.5rem;
 $fs-400: 1.25rem;
 $fs-300: 1rem;
+$fs-200: 0.875rem;
 
-$fs-primary-header: $fs-900;
-$fs-secondary-header: $fs-800;
-$fs-tertiary-header: $fs-700;
-$fs-body: $fs-500;
+// Desktop view:
+// $fs-primary-header: $fs-900;
+// $fs-secondary-header: $fs-800;
+// $fs-tertiary-header: $fs-700;
+// $fs-body: $fs-500;
+// $fs-section-labels: $fs-400;
+// $fs-small: $fs-300;
+
+$fs-primary-header: $fs-600;
+$fs-secondary-header: $fs-500;
+$fs-tertiary-header: $fs-400;
+$fs-body: $fs-300;
 $fs-section-labels: $fs-400;
 $fs-small: $fs-300;
 
@@ -87,10 +96,9 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.8;
-  font-size: $fs-body;
+  font-size: clamp($fs-body, 3vw, $fs-500);
   font-family: $ff-body;
   background-color: $clr-primary-50;
-  // background-color: black;
 }
 
 // A elements that don't have a class get default styles
@@ -119,7 +127,7 @@ a {
 // Utility classes
 .container {
   max-width: 1400px;
-  padding-inline: $size-600;
+  padding-inline: $size-400;
   margin: 0 auto;
 }
 
@@ -141,9 +149,11 @@ a {
 
 .fs-primary-header {
   font-family: $ff-header;
-  font-size: $fs-primary-header;
+  font-size: clamp($fs-primary-header, 6vw, 4rem);
   line-height: 134%;
   color: $clr-neutral-100;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .fs-secondary-header {
@@ -166,4 +176,5 @@ a {
 .highlight {
   background-color: $clr-primary-500;
   padding-inline: 5px;
+  text-shadow: none;
 }

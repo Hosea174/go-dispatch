@@ -1,24 +1,46 @@
 ---
-import arrowIconWhite from "../assets/btn-arrow-white.svg";
 import arrowIcon from "../assets/btn-arrow.svg";
-import callIcon from "../assets/call-icon.svg";
 import playIcon from "../assets/play-ico.svg";
-
 import Button from "../components/Button.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/pages/index.scss";
 ---
 
 <Layout title="GoDispatch: Your Route to Profitable Trucking Ventures">
-  <!-- <Header /> -->
+  <Header />
   <main>
-    <!-- <h1 class="fs-primary-header fw-bold">
-      We have <span class="highlight" style="color: #240000"
-        >Premium Dispatch</span
-      > services
-    </h1> -->
+    <section class="hero-section">
+      <div class="container wrapper">
+        <h1 class="fs-primary-header fw-bold">
+          Supercharge your trucking revenue with <span
+            class="highlight"
+            style="color: #240000">Premium</span
+          > Dispatch services
+        </h1>
+        <p>
+          We bring you the highest paying freight to your truck. Guaranteed
+          results or you DON'T pay us!
+        </p>
+
+        <div class="hero-btn-wrapper">
+          <Button
+            text="Start Free Trial"
+            icon={arrowIcon}
+            class="btn-primary fw-bold fs-small hero-btn"
+          />
+          <Button
+            text="Watch Promo"
+            icon={playIcon}
+            class="btn-secondary fw-bold fs-small hero-btn"
+          />
+        </div>
+        <iframe
+        class="scroll-mouse"
+          src="https://lottie.host/?file=dc58978c-8719-43c6-80a8-cd16be0471fc/DWABtuO5Tc.lottie"
+        ></iframe>
+      </div>
+    </section>
   </main>
-  <Footer />
+  <!-- <Footer /> -->
 </Layout>
