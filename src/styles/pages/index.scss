@@ -1,7 +1,7 @@
 @import "../global";
 
 .hero-section {
-  height: 110vh;
+  min-height: 110vh;
   background-image: url("../../assets/hero-bg-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@
   color: $clr-neutral-100;
 
   .service-wrapper {
-    padding-block: 6rem;
+    padding-block: 6rem 16rem;
     display: flex;
     flex-direction: column;
     gap: 7rem;
@@ -151,7 +151,6 @@
       h2,
       p.services-text {
         text-align: center;
-        // margin-bottom: $size-600;
       }
       ul.services-list {
         justify-content: center;
@@ -171,3 +170,64 @@
   }
 }
 
+.studies-section {
+  position: relative;
+  bottom: 12rem;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    #ff4342 -0.03%,
+    #ff6261 48.28%,
+    #ff4342 99.97%
+  );
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  margin-inline: auto;
+  text-align: center;
+  color: $clr-neutral-100;
+  max-width: 900px;
+  width: clamp(270px, 90vw, 900px);
+
+  .studies-wrapper {
+    padding: $size-700 $size-500 $size-200;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: clamp(2.3rem, 5vw, 3rem);
+    }
+
+    p {
+      margin-block: $size-500;
+      font-size: $fs-400;
+    }
+
+    .btn-secondary {
+      margin: $size-700 auto $size-200;
+    }
+
+    .down-arrow {
+      border: none;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .studies-wrapper {
+      padding: $size-500 $size-400 $size-100;
+    }
+    .studies-wrapper p {
+      font-size: $fs-300;
+      margin-block: $size-400;
+    }
+
+    .studies-wrapper h2 {
+      line-height: 114%;
+    }
+
+    .studies-wrapper .btn-secondary {
+      margin: $size-600 auto $size-100;
+    }
+  }
+}
