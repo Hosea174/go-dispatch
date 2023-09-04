@@ -60,7 +60,7 @@
   }
   @media (min-width: 1117px) {
     .wrapper {
-      padding-top: 13rem;
+      padding-top: 12rem;
     }
   }
   @media (max-width: 350px) {
@@ -73,3 +73,101 @@
     }
   }
 }
+
+.services-section {
+  background-color: $clr-neutral-800;
+  color: $clr-neutral-100;
+
+  .service-wrapper {
+    padding-block: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+
+    h2,
+    p.services-text,
+    ul.services-list {
+      margin-bottom: $size-600;
+    }
+
+    .btn-primary {
+      margin-top: $size-600;
+    }
+
+    p {
+      font-size: $fs-300;
+    }
+
+    .services-list {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.6rem;
+        font-weight: $fw-bold;
+
+        p {
+          line-height: 130%;
+        }
+
+        .service-ico svg {
+          width: 50px;
+        }
+      }
+    }
+
+    .phone-mockup {
+      margin-inline: auto;
+      height: 530px;
+      position: relative;
+      right: 60px;
+    }
+  }
+
+  @media (min-width: 630px) {
+    .service-wrapper .services-list {
+      flex-direction: row;
+      gap: $size-600;
+    }
+
+    .service-wrapper .phone-mockup {
+      height: 620px;
+    }
+  }
+
+  @media (min-width: 1010px) {
+    .service-wrapper {
+      flex-direction: row-reverse;
+      gap: 5rem;
+    }
+  }
+  @media (min-width: 630px) and (max-width: 1010px) {
+    .service-wrapper {
+      h2,
+      p.services-text {
+        text-align: center;
+        // margin-bottom: $size-600;
+      }
+      ul.services-list {
+        justify-content: center;
+        gap: 5rem;
+        margin-block: $size-700;
+      }
+      .btn-primary {
+        margin-inline: auto;
+      }
+    }
+  }
+
+  @media (min-width: 1105px) {
+    .service-wrapper p {
+      font-size: $fs-400;
+    }
+  }
+}
+

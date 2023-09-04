@@ -2,12 +2,10 @@
 
 footer {
   background-color: $clr-primary-100;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   display: grid;
   border-bottom: 2px solid rgb(255 255 255 / 20%);
-  padding-bottom: 20px;
+  padding-block: $size-500;
   font-size: $fs-small;
 
   img.footer-logo {
