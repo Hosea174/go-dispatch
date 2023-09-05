@@ -3,6 +3,11 @@ import arrowIconWhite from "../assets/btn-arrow-white.svg";
 import arrowIcon from "../assets/btn-arrow.svg";
 import phoneMockup from "../assets/chat-mockup.png";
 import playIcon from "../assets/play-ico.svg";
+
+import step1Img from "../assets/step-1-img.png";
+import step2Img from "../assets/step-2-img.png";
+import step3Img from "../assets/step-3-img.png";
+
 import Button from "../components/Button.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
@@ -185,7 +190,7 @@ import "../styles/pages/index.scss";
 
     <!-- CASE STUDIES SECTION -->
     <section class="studies-section">
-      <div class="studies-wrapper">
+      <div class="container studies-wrapper">
         <h2 class="fs-secondary-header fw-bold">
           Explore <span
             class="highlight"
@@ -208,6 +213,62 @@ import "../styles/pages/index.scss";
         ></iframe>
       </div>
     </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
+      <div class="container steps-wrapper">
+        <h2 class="fs-secondary-header fw-bold">
+          Our <span class="highlight" style="color: #FFF0F0">Simple</span> 3-step
+          Process Makes Dispatching <span
+            class="highlight"
+            style="color: #FFF0F0">Easy</span
+          >
+        </h2>
+        <p class="process-description">
+          Simple and quick 3 step processes to get started. Takes 5 minutes or
+          less...and NO contracts!
+        </p>
+        <div class="process-container">
+          <div class="step step-1">
+            <img src={step1Img} alt="A person filling a contact form" />
+            <div class="step-text">
+              <p>Step 1 <span class="dash"></span></p>
+              <p>
+                Fill out the contact form so we get in contact with you to learn
+                more about your fleet size, trailer type, and your preferred
+                routes.
+              </p>
+              <span class="number">01</span>
+            </div>
+          </div>
+          <div class="step step-2">
+            <img src={step2Img} alt="A team of dispatchers working" />
+            <div class="step-text">
+              <p>Step 2 <span class="dash"></span></p>
+              <p>
+                We introduce you to our team of dispatchers and we will assign
+                you a personal assistant that will be in charge of dispatching
+                your loads, communications with brokers, and all the other
+                wonderful services we have to serve your company's success
+              </p>
+              <span class="number">02</span>
+            </div>
+          </div>
+          <div class="step step-3">
+            <img src={step3Img} alt="A truck" />
+            <div class="step-text">
+              <p>Step 3 <span class="dash"></span></p>
+              <p>
+                Now is the easy part... you just text or call your assistant and
+                we will get you freight ready to haul within minutes
+              </p>
+              <span class="number">03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <Footer /> -->
   </main>
-  <!-- <Footer /> -->
 </Layout>

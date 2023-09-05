@@ -79,7 +79,7 @@
   color: $clr-neutral-100;
 
   .service-wrapper {
-    padding-block: 6rem 16rem;
+    padding-block: 6rem;
     display: flex;
     flex-direction: column;
     gap: 7rem;
@@ -172,29 +172,40 @@
 
 .studies-section {
   position: relative;
-  bottom: 12rem;
-  border-radius: 30px;
-  background: linear-gradient(
-    90deg,
-    #ff4342 -0.03%,
-    #ff6261 48.28%,
-    #ff4342 99.97%
-  );
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
-  margin-inline: auto;
-  text-align: center;
-  color: $clr-neutral-100;
-  max-width: 900px;
-  width: clamp(270px, 90vw, 900px);
+  background-color: $clr-primary-100;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 12rem;
+    background-color: $clr-neutral-800;
+  }
 
   .studies-wrapper {
+    position: relative;
+    border-radius: 30px;
+    background: linear-gradient(
+      90deg,
+      #ff4342 -0.03%,
+      #ff6261 48.28%,
+      #ff4342 99.97%
+    );
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    margin-inline: auto;
+    text-align: center;
+    color: $clr-neutral-100;
+    max-width: 900px;
+    width: clamp(270px, 90vw, 900px);
     padding: $size-700 $size-500 $size-200;
+    z-index: 10;
 
     h2 {
       text-transform: uppercase;
-      font-size: clamp(2.3rem, 5vw, 3rem);
+      font-size: clamp(2.2rem, 5vw, 3rem);
     }
 
     p {
@@ -215,7 +226,7 @@
 
   @media (max-width: 450px) {
     .studies-wrapper {
-      padding: $size-500 $size-400 $size-100;
+      padding: 1.8rem 1rem 0.2rem;
     }
     .studies-wrapper p {
       font-size: $fs-300;
@@ -229,5 +240,90 @@
     .studies-wrapper .btn-secondary {
       margin: $size-600 auto $size-100;
     }
+  }
+}
+
+.process-section {
+  background-color: $clr-primary-100;
+  .steps-wrapper {
+    padding-block: 7rem;
+
+    h2,
+    p.process-description {
+      text-align: center;
+      color: $clr-neutral-900;
+      margin-bottom: $size-500;
+    }
+
+    .process-container {
+      padding-block: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: $size-900;
+      font-size: $fs-300;
+
+      .step {
+        display: flex;
+        flex-direction: column;
+        gap: $size-700;
+
+        .step-text {
+          position: relative;
+          p:first-child {
+            color: $clr-primary-200;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: $size-400;
+
+            .dash {
+              display: block;
+              width: 50px;
+              height: 2px;
+              background: $clr-primary-200;
+            }
+          }
+
+          .number {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 8rem;
+            line-height: 75%;
+            font-weight: $fw-bold;
+            color: transparent;
+            -webkit-text-stroke-color: $clr-primary-200;
+            -webkit-text-stroke-width: 1px;
+            opacity: 0.5;
+          }
+        }
+
+        img {
+          width: clamp(250px, 85vw, 580px);
+          margin-inline: auto;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 700px) {
+    .steps-wrapper .process-container .step {
+      flex-direction: row;
+      align-items: center;
+
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+
+      img {
+        width: clamp(250px, 50vw, 700px);
+      }
+    }
+
+    .steps-wrapper .process-container {
+      padding-top: 3rem;
+      gap: $size-400;
+      font-size: $fs-400;
+    } 
   }
 }
