@@ -183,17 +183,16 @@ a {
 
 // scrollbar styles
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #06385ad4;
+  background: #f0abab;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c03535;
+  background: #d43131de;
   border-radius: 6px;
-  // border: 3px solid #973a3afc;
 }
 
 ::-webkit-scrollbar-thumb:hover {

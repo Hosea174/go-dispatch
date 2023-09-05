@@ -4,6 +4,9 @@ import arrowIcon from "../assets/btn-arrow.svg";
 import phoneMockup from "../assets/chat-mockup.png";
 import playIcon from "../assets/play-ico.svg";
 
+import graph1Img from "../assets/graph-1.png";
+import graph2Img from "../assets/graph-2.png";
+import graph3Img from "../assets/graph-3.png";
 import step1Img from "../assets/step-1-img.png";
 import step2Img from "../assets/step-2-img.png";
 import step3Img from "../assets/step-3-img.png";
@@ -45,8 +48,9 @@ import "../styles/pages/index.scss";
         </div>
         <iframe
           class="scroll-mouse"
-          src="https://lottie.host/?file=dc58978c-8719-43c6-80a8-cd16be0471fc/DWABtuO5Tc.lottie"
+          src="https://lottie.host/?file=c72cd870-1028-4806-9b11-e4c30c0b88d5/oCAnQOsIds.json"
         ></iframe>
+
       </div>
     </section>
 
@@ -266,9 +270,54 @@ import "../styles/pages/index.scss";
             </div>
           </div>
         </div>
+
+        <Button
+          text="CONTACT US"
+          icon={arrowIconWhite}
+          class="btn-primary fw-bold fs-small"
+        />
       </div>
     </section>
 
+    <!-- proof section -->
+    <section class="proof-section">
+      <div class="container proof-wrapper">
+        <h2 class="fs-secondary-header fw-bold">
+          Reliable Routes <span
+            class="highlight"
+            style="background-color: #ff4342; color:#fdf7f7">Remarkable</span
+          >, Results
+        </h2>
+        <p>
+          <span style="color: #ff4342">
+            94% of our clients earn an extra $1,500/month OR $18,000/year in
+            revenue
+          </span> when switching over to our dispatch service. Skip the guesswork,
+          trial-and-error and never ending shit show of trying to figure everything
+          out yourself and instead grow your revenue with proven frameworks
+        </p>
+        <div class="graphs">
+          <img src={graph1Img} alt="" class="graph" />
+          <img src={graph2Img} alt="" class="graph" />
+          <img src={graph3Img} alt="" class="graph" />
+        </div>
+
+        <div class="proof-btn-wrapper">
+          <Button
+            text="Get More Loads, Less Hassel"
+            icon={arrowIconWhite}
+            class="btn-primary fw-bold fs-small | proof-btn"
+            buttonStyle="color: white;"
+          />
+          
+          <Button
+            text="Services and Pricing"
+            icon={playIcon}
+            class="btn-secondary fw-bold fs-small | proof-btn"
+          />
+        </div>
+      </div>
+    </section>
     <!-- <Footer /> -->
   </main>
 </Layout>

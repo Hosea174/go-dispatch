@@ -34,8 +34,8 @@
 
     .scroll-mouse {
       border: none;
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
       margin-top: $size-200;
     }
   }
@@ -87,7 +87,7 @@
     h2,
     p.services-text,
     ul.services-list {
-      margin-bottom: $size-600;
+      margin-bottom: $size-500;
     }
 
     .btn-primary {
@@ -246,13 +246,21 @@
 .process-section {
   background-color: $clr-primary-100;
   .steps-wrapper {
-    padding-block: 7rem;
+    padding-block: 7rem 4rem;
 
     h2,
     p.process-description {
       text-align: center;
       color: $clr-neutral-900;
       margin-bottom: $size-500;
+    }
+
+    .btn-primary {
+      margin: $size-700 auto;
+      width: 300px;
+      height: 60px;
+      font-size: $fs-300;
+      color: #fff;
     }
 
     .process-container {
@@ -269,6 +277,9 @@
 
         .step-text {
           position: relative;
+          max-width: 600px;
+          margin-inline: auto;
+
           p:first-child {
             color: $clr-primary-200;
             display: flex;
@@ -306,7 +317,7 @@
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     .steps-wrapper .process-container .step {
       flex-direction: row;
       align-items: center;
@@ -316,7 +327,7 @@
       }
 
       img {
-        width: clamp(250px, 50vw, 700px);
+        width: clamp(250px, 50vw, 800px);
       }
     }
 
@@ -324,6 +335,53 @@
       padding-top: 3rem;
       gap: $size-400;
       font-size: $fs-400;
-    } 
+    }
+  }
+}
+
+.proof-section {
+  .proof-wrapper {
+    padding-block: 6rem;
+    text-align: center;
+    h2,
+    p {
+      margin-bottom: $size-500;
+    }
+
+    .graphs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $size-600;
+      margin: $size-800 auto;
+    }
+
+    .proof-btn-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: $size-500;
+      margin-inline: auto;
+      width: fit-content;
+
+      .proof-btn {
+        padding: 0.9rem 1.5rem;
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    .proof-wrapper .graphs {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .graph {
+        max-width: 36vw;
+      }
+    }
+  }
+  @media (max-width: 350px) {
+    .proof-wrapper .proof-btn-wrapper .proof-btn {
+      padding: 0.9rem 1rem;
+    }
   }
 }
