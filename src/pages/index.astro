@@ -2,10 +2,10 @@
 import arrowIconWhite from "../assets/btn-arrow-white.svg";
 import arrowIcon from "../assets/btn-arrow.svg";
 import phoneMockup from "../assets/chat-mockup.png";
+import clientsIcon from "../assets/clients-icon.svg";
 import playIcon from "../assets/play-ico.svg";
 import revenueIcon from "../assets/revenue-icon.svg";
 import loadsIcon from "../assets/truck-icon.svg";
-import clientsIcon from "../assets/clients-icon.svg";
 
 import graph1Img from "../assets/graph-1.png";
 import graph2Img from "../assets/graph-2.png";
@@ -14,9 +14,11 @@ import step1Img from "../assets/step-1-img.png";
 import step2Img from "../assets/step-2-img.png";
 import step3Img from "../assets/step-3-img.png";
 
+import Accordion from "../components/Accordion.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/pages/index.scss";
 ---
@@ -345,6 +347,68 @@ import "../styles/pages/index.scss";
         />
       </div>
     </section>
-    <!-- <Footer /> -->
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+      <div class="faq-wrapper">
+        <h2 class="fs-secondary-header fw-bold">Frequently Asked Questions</h2>
+        <ul class="questions">
+          <li>
+            <Accordion
+              id="chck1"
+              forLabel="chck1"
+              question="What does a dispatch service company actually do?"
+              answer="A good dispatch company will get to know your business inside out and will handle thewhole dispatch process from, booking loads, filling out paperwork, communicating withbrokers and also handle any hiccups on the way. They will assess your current routes,revenue you want to generate, overhead costs and then dispatch you loads that's mostprofitable for your business. Part of their strategy should also include continualevaluation to ensure a client is maintaining profitability and is getting the results theywant."
+            />
+          </li>
+
+          <li>
+            <Accordion
+              id="chck2"
+              forLabel="chck2"
+              question="Why don't I dispatch myself instead?"
+              answer="Thinking of dispatching on your own? We understand the appeal of doing it yourself, but here's the deal: First, our loads pay 15% more than those you'd find on regular load boards. So, while you might think you're saving some bucks doing it yourself, you're actually leaving money on the table. Plus, we've got some sweet connections with direct brokers and shippers, which means we have exclusive access to private loads that never appear on public boards. And let's not forget the hustle! We handle all the nitty-gritty stuff for you - from making calls, booking loads, to filling out carrier packets and rate confirmations while maintaining communication with brokers until your load is securely delivered. So, with us, you're not just making more money; you're also saving time and stress."
+            />
+          </li>
+
+          <li>
+            <Accordion
+              id="chck3"
+              forLabel="chck3"
+              question="How do I know that I'll get a return on my investment?"
+              answer="Because we put our money where our mouth is and give you a chance to try our servicefor FREE! We believe a great product sells itself, that's why we are so confident to havecustomers try it out risk free. Also 94% of our clients make an extra $18,000/year whenswitching over to our dispatch service. And we also make BIG GUARANTEES that otherdispatch companies aren't willing to make."
+            />
+          </li>
+
+          <li>
+            <Accordion
+              id="chck4"
+              forLabel="chck4"
+              question="Do you work with small or big companies?"
+              answer="Size doesn't matter over here! Our clients range from 1 truck operations to large fleetswith over 50+ trucks."
+            />
+          </li>
+
+          <li>
+            <Accordion
+              id="chck5"
+              forLabel="chck5"
+              question="Why is GoDispatch the best truck dispatch company?"
+              answer="Why are burritos delicious? Why is water wet? No, but seriously. Instead of using this section to convince you, why we're the best truck dispatch company... here are the stats:<br>- 94% of clients make an extra $18,000/year<br>- 15.2 million client revenue generated<br>- Over 127 trucking companies served.<br>- 5000+ loads booked.<br>- 15% higher paying loads than load boards.<br>- 112 reviews (average of 4.8 stars)<br>- #1 fastest-growing dispatch company."
+            />
+          </li>
+
+          <li>
+            <Accordion
+              id="chck6"
+              forLabel="chck6"
+              question="Can you guarantee results"
+              answer="We offer guarantees for all of our services. We put our money where our mouth is; if youfind a load that pays higher than the one we have booked you, you don't pay usanything."
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <Footer />
   </main>
 </Layout>

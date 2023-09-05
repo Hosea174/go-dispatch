@@ -346,6 +346,7 @@
     h2,
     p {
       margin-bottom: $size-500;
+      color: $clr-neutral-900;
     }
 
     .graphs {
@@ -360,7 +361,7 @@
       display: flex;
       flex-direction: column;
       gap: $size-500;
-      margin-inline: auto;
+      margin: 7rem auto 3rem;
       width: fit-content;
 
       .proof-btn {
@@ -387,7 +388,7 @@
 }
 
 .stats-section {
-  padding-block: $size-600;
+  padding-block: $size-600 $size-900;
 
   .stats-wrapper {
     display: flex;
@@ -398,6 +399,20 @@
       flex-direction: column;
       align-items: center;
     }
+  }
+}
 
+.faq-section {
+  .faq-wrapper {
+    padding-block: 4rem 6rem;
+    h2 {
+      text-align: center;
+      margin-bottom: $size-900;
+      color: $clr-neutral-900;
+    }
+
+    .questions li {
+      margin-bottom: $size-400;
+    }
   }
 }
