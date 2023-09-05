@@ -341,7 +341,7 @@
 
 .proof-section {
   .proof-wrapper {
-    padding-block: 6rem;
+    padding-block: 6rem 3rem;
     text-align: center;
     h2,
     p {
@@ -383,5 +383,21 @@
     .proof-wrapper .proof-btn-wrapper .proof-btn {
       padding: 0.9rem 1rem;
     }
+  }
+}
+
+.stats-section {
+  padding-block: $size-600;
+
+  .stats-wrapper {
+    display: flex;
+    gap: $size-600;
+  }
+  @media (max-width: 955px) {
+    .stats-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 }

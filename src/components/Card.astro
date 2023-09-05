@@ -1,15 +1,21 @@
 ---
-import '../styles/components/cards.scss'
+import "../styles/components/card.scss";
 
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+  icon: string;
+  title: string;
+  number: string;
+  bodyText: string;
 }
 
-const { href, title, body } = Astro.props;
+const { icon, title, number, bodyText } = Astro.props;
 ---
 
-<li class="link-card">
-
-</li>
+<div class="card">
+  <div class="card-header">
+    <img src={icon} alt="" />
+    <p class="card-title">{title}</p>
+  </div>
+  <p class="card-number">{number}</p>
+  <p class="card-body">{bodyText}</p>
+</div>

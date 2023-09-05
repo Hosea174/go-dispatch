@@ -18,7 +18,7 @@ $ff-body: "Be Vietnam Pro", sans-serif;
 // font weights
 $fw-lighter: 300;
 $fw-regular: 400;
-$fw-semi-bold: 500;
+$fw-semi-bold: 600;
 $fw-bold: 700;
 
 // Font Size variables
@@ -32,17 +32,8 @@ $fs-400: 1.25rem;
 $fs-300: 1rem;
 $fs-200: 0.875rem;
 
-// Desktop view:
-// $fs-primary-header: $fs-900;
-// $fs-secondary-header: $fs-800;
-// $fs-tertiary-header: $fs-700;
-// $fs-body: $fs-500;
-// $fs-section-labels: $fs-400;
-// $fs-small: $fs-300;
-
 $fs-primary-header: $fs-600;
 $fs-secondary-header: $fs-650;
-$fs-tertiary-header: $fs-400;
 $fs-body: $fs-300;
 $fs-section-labels: $fs-400;
 $fs-small: $fs-300;
@@ -161,10 +152,6 @@ a {
   font-family: $ff-header;
   font-size: clamp($fs-secondary-header, 5vw, 3rem);
   line-height: 124%;
-}
-.fs-tertiary-header {
-  font-family: $ff-header;
-  font-size: $fs-tertiary-header;
 }
 
 .fs-section-labels {

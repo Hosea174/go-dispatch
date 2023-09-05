@@ -1,8 +1,13 @@
 ---
 import "../styles/components/buttons.scss";
 
-
 const { text, icon, buttonStyle, class: className } = Astro.props;
+interface Props {
+  text: string;
+  icon: string;
+  buttonStyle?: string;
+  class: string;
+}
 ---
 
 <button class={className} style={buttonStyle}>{text}<img src={icon} /></button>

@@ -1,0 +1,74 @@
+@import "../global";
+
+.card {
+  padding: 2rem;
+  background-color: $clr-primary-100;
+  width: clamp(290px, 80vw, 900px);
+  border-radius: 0.4em;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  * {
+    margin-bottom: $size-300;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: $size-500;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .card-title {
+      font-weight: $fw-semi-bold;
+      font-size: $fs-500;
+    }
+  }
+
+  .card-number {
+    font-weight: $fw-bold;
+    font-size: $fs-700;
+  }
+
+  .card-body {
+    font-size: $fs-400;
+  }
+
+  @media ((min-width: 955px) and (max-width: 1210px)) or (max-width: 465px) {
+    padding: 1rem;
+    * {
+      margin-bottom: $size-200;
+    }
+    .card-header {
+      gap: $size-300;
+      .card-title {
+        font-size: $fs-400;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .card-number {
+      font-size: $fs-600;
+    }
+
+    .card-body {
+      font-size: $fs-300;
+    }
+  }
+  @media ((min-width: 955px) and (max-width: 1210px)) {
+    min-height: 260px;
+  }
+  
+  @media (min-width: 465px) and (max-width: 955px){
+    min-height: 320px;
+  }
+  
+  @media (max-width: 465px) {
+    min-height: 260px;
+  }
+}

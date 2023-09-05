@@ -3,6 +3,9 @@ import arrowIconWhite from "../assets/btn-arrow-white.svg";
 import arrowIcon from "../assets/btn-arrow.svg";
 import phoneMockup from "../assets/chat-mockup.png";
 import playIcon from "../assets/play-ico.svg";
+import revenueIcon from "../assets/revenue-icon.svg";
+import loadsIcon from "../assets/truck-icon.svg";
+import clientsIcon from "../assets/clients-icon.svg";
 
 import graph1Img from "../assets/graph-1.png";
 import graph2Img from "../assets/graph-2.png";
@@ -12,6 +15,7 @@ import step2Img from "../assets/step-2-img.png";
 import step3Img from "../assets/step-3-img.png";
 
 import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/pages/index.scss";
@@ -50,7 +54,6 @@ import "../styles/pages/index.scss";
           class="scroll-mouse"
           src="https://lottie.host/?file=c72cd870-1028-4806-9b11-e4c30c0b88d5/oCAnQOsIds.json"
         ></iframe>
-
       </div>
     </section>
 
@@ -309,13 +312,37 @@ import "../styles/pages/index.scss";
             class="btn-primary fw-bold fs-small | proof-btn"
             buttonStyle="color: white;"
           />
-          
+
           <Button
             text="Services and Pricing"
             icon={playIcon}
             class="btn-secondary fw-bold fs-small | proof-btn"
           />
         </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="container stats-wrapper">
+        <Card
+          icon={revenueIcon}
+          title="Revenue Generated"
+          number="$15.2M"
+          bodyText="We let our numbers do the talking. $15.2 Million in reported client revenue"
+        />
+        <Card
+          icon={loadsIcon}
+          title="Loads Delivered"
+          number="5000+"
+          bodyText="Over 5000 loads delivered and counting"
+        />
+        <Card
+          icon={clientsIcon}
+          title="Satisfied Clients"
+          number="127"
+          bodyText="We have served 127 happy customers so far"
+        />
       </div>
     </section>
     <!-- <Footer /> -->
