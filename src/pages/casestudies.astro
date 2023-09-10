@@ -1,3 +1,123 @@
 ---
-import '../styles/pages/casestudies.scss';
+import "../styles/pages/casestudies.scss";
+
+import studiesImg from "../assets/studies-img.png";
+import studiesImg2 from "../assets/studies-img2.png";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
+
+<Layout title="GoDispatch: Explore Case Studies">
+  <Header />
+  <main>
+    <section class="studies-hero-section">
+      <div class="studies-hero-wrapper">
+        <div class="text-wrapper">
+          <h1
+            class="fs-primary-header fw-bold"
+            style="text-shadow: none; color: #240000"
+          >
+            Go<span style="color: #FF4342">Dispatch</span> Case Studies
+          </h1>
+          <p>
+            Explore our collection of case studies that showcase our expertise,
+            successful transformations and the consistent results we bring to
+            our clients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="studies-section">
+      <div class="container studies-wrapper">
+        <div class="study study-1">
+          <div class="study-text">
+            <h2 class="fs-secondary-header">Zion Logistics</h2>
+            <p class="sub-header">GROWING FROM 1 to 3 TRUCKS IN 12 MONTHS</p>
+            <ol class="study-description">
+              <li>
+                Owner of Zion Logistics approached us in 2021 with just 1 truck.
+              </li>
+              <li>
+                We put him on our hottest lane at the time, which was our East
+                coast lane and started to make gross revenue of $8,700 weekly.
+              </li>
+              <li>
+                Zion Logistics made massive profits and saw an opportunity to
+                grow their company so 7 months in they bought another truck to
+                add to their fleet…then 5 months later, they bought their 3rd
+                truck, so 12 months into our partnership all 3 trucks combined
+                were making $96,000/month running our east coast lane.
+              </li>
+            </ol>
+          </div>
+          <img src={studiesImg} alt="Case study illustration" />
+        </div>
+        <div class="study study-2">
+          <div class="study-text">
+            <h2 class="fs-secondary-header">DAVID LAGO</h2>
+            <p class="sub-header">
+              Successful Owner Operator... 23% revenue increase while reducing
+              overhead cost
+            </p>
+            <ol class="study-description">
+              <li>
+                David is a self-dispatched owner operator with 7 years of
+                experience but was still spending his weekends worrying about
+                work and was never satisfied with how much he was making.
+              </li>
+              <li>
+                We immediately got him rolling on our “OTR” lane which gave him
+                back his confidence and increased his weekly revenue by around
+                $1,050...we also took a look at his overhead expenses and was
+                spending WAY too much on his insurance bill and for fuel.
+              </li>
+              <li>
+                We referred him to a better insurance company which reduced his
+                monthly premium by $829! Also showed him the fuel card with the
+                best discounts which saves him around $900 monthly as well.
+              </li>
+              <li>
+                After all was said and done he was able to increase revenue by
+                23% and reduce his cost by 13%, which totals to an extra
+                $2,779/month and $33,348/year!
+              </li>
+            </ol>
+          </div>
+          <img src={studiesImg2} alt="Case study illustration" />
+        </div>
+        <div class="study study-3">
+          <div class="study-text">
+            <h2 class="fs-secondary-header">MKB Trucking</h2>
+            <p class="sub-header">$28K/month to 196K/month in 3 Years</p>
+            <ol class="study-description">
+              <li>
+                MKB Trucking was a 1 truck operation when they decided to come
+                work with us in February 2020.
+              </li>
+              <li>
+                We got their first truck on the road and helped them make around
+                $28,000/month then when the freight market started picking up
+                their profit margins started skyrocketing and started to add 1
+                truck every 5 months.
+              </li>
+              <li>
+                We referred him to a better insurance company which reduced his
+                monthly premium by $829! Also showed him the fuel card with the
+                best discounts which saves him around $900 monthly as well.
+              </li>
+              <li>
+                3 years into our partnership they were able to grow their fleet
+                to 7 trucks and were making $196K in gross revenue every month!
+                A whopping 700% Month-over-Month increase in revenue.
+              </li>
+            </ol>
+          </div>
+          <img src={studiesImg} alt="Case study illustration" />
+        </div>
+      </div>
+    </section>
+    <Footer />
+  </main>
+</Layout>

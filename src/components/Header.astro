@@ -6,32 +6,32 @@ import "../styles/components/header.scss";
 import Button from "../components/Button.astro";
 ---
 
-<header class="container">
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li class="nav-link" style="--i: 0"><a href="#"></a>Home</li>
-      <li class="nav-link" style="--i: 1"><a href="#"></a>About</li>
-      <li class="nav-link" style="--i: 2"><a href="#"></a>Contact</li>
-      <li class="nav-link" style="--i: 3"><a href="#"></a>Pricing</li>
-    </ul>
-  </nav>
-  <button class="nav-toggler">
-    <span></span>
-  </button>
-  <a href="#"><img src={logo} alt="godispatch logo" class="logo" /></a>
-
-  <div class="nav-buttons">
-    <Button
-      text="Start Free Trial"
-      icon={arrowIcon}
-      class="btn-primary fw-bold fs-small nav-btn"
-    />
-
-    <Button
-      text="702-426-0025"
-      icon={callIcon}
-      class="btn-secondary fw-bold fs-small nav-btn"
-    />
+<header>
+  <div class="container header-wrapper">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="nav-link" style="--i: 0"><a href="#"></a>Home</li>
+        <li class="nav-link" style="--i: 1"><a href="#"></a>About</li>
+        <li class="nav-link" style="--i: 2"><a href="#"></a>Contact</li>
+        <ll class="nav-link" style="--i: 3"><a href="#"></a>Pricing</ll>
+      </ul>
+    </nav>
+    <button class="nav-toggler">
+      <span></span>
+    </button>
+    <a href="#"><img src={logo} alt="godispatch logo" class="logo" /></a>
+    <div class="nav-buttons">
+      <Button
+        text="Start Free Trial"
+        icon={arrowIcon}
+        class="btn-primary fw-bold fs-small nav-btn"
+      />
+      <Button
+        text="702-426-0025"
+        icon={callIcon}
+        class="btn-secondary fw-bold fs-small nav-btn"
+      />
+    </div>
   </div>
 </header>
 

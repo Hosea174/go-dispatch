@@ -1,0 +1,301 @@
+---
+import arrowIconWhite from "../assets/btn-arrow-white.svg";
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/pages/pricing.scss";
+---
+
+<Layout title="GoDispatch: Services and Pricing">
+  <Header />
+
+  <main>
+    <section class="pricing-hero-section">
+      <div class="container pricing-hero-wrapper">
+        <h1
+          class="fs-primary-header fw-bold"
+          style="text-shadow: none; color: #240000"
+        >
+          A One-Stop Shop For All Your Trucking Needs…
+        </h1>
+        <Button
+          text="Start 14 Days FREE Trial"
+          icon={arrowIconWhite}
+          class="btn-primary fw-bold fs-small"
+          buttonStyle="color: white;"
+        />
+      </div>
+    </section>
+
+    <section class="pricing-cta-section">
+      <div class="container pricing-cta-wrapper">
+        <div class="cta-header">
+          <h2 class="fs-secondary-header fw-bold">
+            Wherever You Get Your Loads From…We GUARANTEE Ours Pays MORE Or You
+            Won't Pay Us At All.
+          </h2>
+          <p>
+            We are so confident that we have perfected our 'unique' and
+            effective way to find the highest paying loads since 2018, that we
+            are willing to give you the chance to find a higher paying load than
+            the one we have booked you…and if you do find one, then you don't
+            have to pay us a single penny!
+          </p>
+        </div>
+        <Button
+          text="Let's Have a Conversation"
+          icon={arrowIconWhite}
+          class="btn-primary fw-bold fs-small"
+          buttonStyle="color: white;"
+        />
+      </div>
+    </section>
+    <section class="plans-section">
+      <div class="container plans-wrapper">
+        <h2 class="fs-secondary-header fw-bold">
+          Go<span style="color: #FF4342">Dispatch</span> Priced Your Way
+        </h2>
+        <div class="plans">
+          <div class="plan plan-standard">
+            <div class="plan-header">
+              <p class="plan-type fw-bold">Standard</p>
+              <p class="price fw-bold">
+                3% <span style="font-size: 2rem">per load</span>
+              </p>
+            </div>
+
+            <ul class="plan-perks">
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Dispatch service</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Guaranteed highest paying freight of the day</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Fill out carrier packet</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Coordinate pick up & drop off appointments</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Dispatcher assistance from 6am-3pm</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Accounting</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>24/7 Dispatcher assistance</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>24/7 Roadside Assistance</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>IFTA Tax filing</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>IRS Tax filing</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Drug test screening</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>FMCSA Compliance</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Invoice Loads to factoring company</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Running credit checks on all brokers</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Reduce ovecost by analyzing business expenses</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Provide weekly reports</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon unavailable"></div>
+                  <p>Assigned personal assistant</p>
+                </div>
+              </li>
+            </ul>
+
+            <button class="select-plan">Choose Plan</button>
+          </div>
+
+          <div class="plan plan-premium">
+            <div class="plan-header">
+              <p class="plan-type fw-bold">Premium</p>
+              <p class="price fw-bold">
+                <span style="text-decoration: line-through;">6%</span> 4%
+                <span style="font-size: 2rem">per load</span>
+              </p>
+              <p class="discount">
+                Saving of $500/monthly (Sale ends this week)
+              </p>
+            </div>
+
+            <ul class="plan-perks">
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Dispatch service</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Guaranteed highest paying freight of the day</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Fill out carrier packet</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Coordinate pick up & drop off appointments</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Dispatcher assistance from 6am-3pm</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Accounting</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>24/7 Dispatcher assistance</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>24/7 Roadside Assistance</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>IFTA Tax filing</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>IRS Tax filing</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Drug test screening</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>FMCSA Compliance</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Invoice Loads to factoring company</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Running credit checks on all brokers</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Reduce ovecost by analyzing business expenses</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Provide weekly reports</p>
+                </div>
+              </li>
+              <li>
+                <div class="perk">
+                  <div class="availability-icon available"></div>
+                  <p>Assigned personal assistant</p>
+                </div>
+              </li>
+            </ul>
+            <button class="select-plan">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
