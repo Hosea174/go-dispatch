@@ -1,4 +1,127 @@
 ---
-import '../styles/pages/about.scss';
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/pages/about.scss";
 
+import ctaImg from "../assets/abt-cta-img.png";
+import arrowIconWhite from "../assets/btn-arrow-white.svg";
+import profitImg from "../assets/profit.svg";
+import relaxImg from "../assets/relax.svg";
+import SimplifyImg from "../assets/simplify.svg";
+import AboutUs from "../assets/who-are-we.png";
 ---
+
+<Layout title="GoDispatch: Who are we?">
+  <Header />
+
+  <main>
+    <section class="about-hero-section">
+      <div class="container about-hero-wrapper">
+        <h1 class="fw-bold fs-primary-header" style="text-shadow: none;">
+          <span class="highlight" style="color: #240000;">Efficient</span>
+          <br />and Sustainable
+        </h1>
+      </div>
+    </section>
+    <section class="about-us-section">
+      <div class="container about-wrapper">
+        <div class="abt-header">
+          <h2 class="fw-bold fs-secondary-header">About Us</h2>
+          <p>
+            We're here to make owning a trucking company a whole lot easier,
+            profitable, less stressful and more fun - for the thousands of owner
+            operators and fleet owners who run them everyday.
+          </p>
+        </div>
+
+        <div class="abt-us">
+          <img src={AboutUs} alt="who are we?" />
+          <p class="who-are-we">
+            GoDispatch, is a dedicated truck dispatch company specializing in
+            providing high-quality services to trucking companies across the
+            nation. We are passionate about bringing you the highest paying
+            freight available on the market, ensuring that you maximize your
+            profitability and achieve success in your business
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us-section">
+      <div class="container why-us-wrapper">
+        <h2 class="fw-bold fs-secondary-header">
+          Why choose Go<span style="color:#FF4342">Dispatch</span>
+        </h2>
+        <ul class="points">
+          <li>
+            <div class="why-text">
+              <h3>Simplifying Your Operations</h3>
+              <p>
+                We believe that efficiency is key to running a successful
+                trucking company. That's why we streamline your dispatch
+                processes, handle load management, and assist with paperwork,
+                allowing you to focus on what you do best - driving and growing
+                your business.
+              </p>
+            </div>
+            <img src={SimplifyImg} alt="Working man illustration" />
+          </li>
+          <li>
+            <img src={profitImg} alt="Profit illustration" />
+            <div class="why-text">
+              <h3>Profitability</h3>
+              <p>
+                We are committed to helping you achieve maximum profitability.
+                Through our extensive network of industry connections, we strive
+                to secure the highest paying freight available. We negotiate
+                competitive rates on your behalf, ensuring that your trucks are
+                consistently hauling loads that deliver optimal financial
+                returns.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="why-text">
+              <h3>Stress-Free Experience</h3>
+              <p>
+                Running a trucking company can be overwhelming, but with
+                GoDispatch, you can leave the stress behind. Our team of
+                dispatch professionals handles the intricacies of load planning,
+                tracking, and customer coordination. We act as your trusted
+                partners, providing real-time support and resolving any issues
+                that may arise, so you can enjoy a smoother,
+              </p>
+            </div>
+            <img src={relaxImg} alt="Relaxing person illustration" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-cta-section">
+      <div class="container about-cta-wrapper">
+        <div class="cta-text">
+          <h2 class="fs-secondary-header fw-bold">
+            Thinking about taking your trucking venture to new heights
+          </h2>
+          <p>
+            Consider Your Trucking Venture's Ascent. Together, We'll Blaze
+            Trails to Success.
+          </p>
+
+          <Button
+            text="Get in Touch"
+            icon={arrowIconWhite}
+            class="btn-primary fw-bold fs-small"
+            buttonStyle="color: white;"
+          />
+        </div>
+      </div>
+      <img src={ctaImg} class="cta-img" alt="trucks" />
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

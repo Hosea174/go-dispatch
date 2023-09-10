@@ -1,0 +1,204 @@
+@import "../global";
+
+.contact-hero-section {
+  min-height: 600px;
+  background-image: url("../../assets/contact-banner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .contact-hero-wrapper {
+    padding-top: 10rem;
+    text-align: center;
+    color: $clr-neutral-100;
+
+    h1,
+    p {
+      margin-bottom: $size-300;
+      text-shadow: none;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+    p {
+      max-width: 600px;
+      margin-inline: auto;
+      font-size: $fs-400;
+    }
+  }
+
+  @media (max-width: 670px) {
+    .contact-hero-wrapper {
+      p {
+        font-size: $fs-300;
+      }
+    }
+  }
+}
+
+.contact-section {
+  .contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: -12rem 5rem;
+
+    .contact-form {
+      background-color: $clr-neutral-100;
+      width: clamp(600px, 45vw, 900px);
+      padding: $size-500 $size-500 $size-600;
+      border-radius: 20px;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.11);
+
+      .form-header {
+        text-align: center;
+
+        h2 {
+          font-size: $fs-600;
+          margin-bottom: $size-200;
+        }
+        p {
+          max-width: 600px;
+          font-size: $fs-400;
+          margin: 0 auto $size-600;
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: $size-400;
+        font-size: 1rem;
+
+        .input-wrapper {
+          display: flex;
+          gap: $size-400;
+        }
+        input,
+        textarea {
+          color: #280a0a;
+          border-radius: 5px;
+          width: 100%;
+          padding: 0.7rem 0.4rem;
+          background-color: $clr-primary-100;
+          border: 2px solid #00243815;
+
+          &:focus {
+            outline: none;
+            border-bottom: 2px solid $clr-primary-500;
+            // transition: 0.3s;
+          }
+        }
+        button[type="submit"] {
+          padding: 0.5rem;
+          background-color: $clr-primary-500;
+          color: $clr-neutral-100;
+          border: none;
+          border-radius: 0%;
+          transition: background-color 0.3s ease;
+          margin-top: $size-400;
+          &:hover,
+          &:focus {
+            background-color: lighten($clr-primary-500, 7%);
+          }
+        }
+      }
+    }
+    .contact-details {
+      font-size: $fs-400;
+      width: 560px;
+      .details-header {
+        h2 {
+          font-size: $fs-600;
+          margin-bottom: $size-200;
+        }
+      }
+
+      .contact-info {
+        margin-top: $size-500;
+        font-size: $fs-300;
+        background-color: $clr-primary-100;
+        width: 450px;
+        padding: 1rem 0.85rem;
+        border-radius: 10px;
+        border: 2px solid #00243815;
+        display: flex;
+        flex-direction: column;
+        gap: $size-300;
+
+        .info {
+          display: flex;
+          align-items: center;
+          gap: $size-300;
+
+          .contact-icon {
+            width: 30px;
+          }
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .google-map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    .contact-wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: $size-800;
+      .contact-form {
+        width: 90vw;
+        padding: $size-400 $size-400 $size-500;
+      }
+
+      .details-header {
+        text-align: center;
+      }
+      .contact-details .contact-info {
+        width: auto;
+      }
+    }
+  }
+  @media (max-width: 670px) {
+    .contact-wrapper .details-header {
+      width: 90vw;
+      margin-inline: auto;
+    }
+
+    .contact-wrapper .contact-form form {
+      .input-wrapper {
+        flex-direction: column;
+      }
+
+      input,
+      textarea {
+        padding: 0.4rem 0.3rem;
+      }
+    }
+    .contact-wrapper .contact-details .contact-info {
+      max-width: 85vw;
+      margin-inline: auto;
+    }
+
+    .contact-wrapper .contact-details {
+      width: auto;
+      font-size: $size-400;
+
+      .contact-info p {
+        font-size: $fs-200;
+      }
+    }
+    .contact-wrapper .contact-form .form-header {
+      p {
+        font-size: $fs-300;
+      }
+    }
+  }
+}

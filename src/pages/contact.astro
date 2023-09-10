@@ -1,3 +1,144 @@
 ---
-import '../styles/pages/contact.scss';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/pages/contact.scss";
 ---
+
+<Layout title="GoDispatch: Let's get in touch">
+  <Header />
+  <main>
+    <section class="contact-hero-section">
+      <div class="container contact-hero-wrapper">
+        <h1 class="fs-primary-header fw-bold" style="text-transform: unset;">
+          Connect With Go<span style="color: #FF4342;">Dispatch</span>
+        </h1>
+        <p>
+          Ready to Chat? We're here to help. Get in Touch with Our Experts
+          Today!
+        </p>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container contact-wrapper">
+        <div class="contact-details">
+          <div class="details-header">
+            <h2 class="fw-bold">Let's get started</h2>
+            <p>
+              Tell us a little about yourself, and we will get in touch in under
+              5 minutes.
+            </p>
+          </div>
+          <div class="contact-info">
+            <div class="info email-info">
+              <div class="contact-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="18"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.8 0H2.2C.99 0 .011 1.012.011 2.25L0 15.75C0 16.988.99 18 2.2 18h17.6c1.21 0 2.2-1.012 2.2-2.25V2.25C22 1.012 21.01 0 19.8 0Zm-.44 4.781-7.777 4.973a1.091 1.091 0 0 1-1.166 0L2.64 4.78a.941.941 0 0 1-.448-.597.977.977 0 0 1 .113-.743.948.948 0 0 1 .604-.43.915.915 0 0 1 .721.15L11 7.875l7.37-4.714a.924.924 0 0 1 .721-.15.924.924 0 0 1 .604.43.97.97 0 0 1-.335 1.34Z"
+                  ></path>
+                </svg>
+              </div>
+              <p>info@godispatch.io</p>
+            </div>
+            <div class="info location-info">
+              <div class="contact-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="22"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M8 22S0 11.957 0 7.7a7.45 7.45 0 0 1 .609-2.947 7.687 7.687 0 0 1 1.734-2.498A8.028 8.028 0 0 1 4.94.586a8.271 8.271 0 0 1 6.123 0c.97.387 1.852.954 2.595 1.67a7.688 7.688 0 0 1 1.734 2.497C15.793 5.688 16 6.69 16 7.7 16 11.957 8 22 8 22ZM8 9.9c.606 0 1.188-.232 1.616-.644.429-.413.67-.973.67-1.556 0-.583-.241-1.143-.67-1.556A2.332 2.332 0 0 0 8 5.5c-.606 0-1.188.232-1.616.644-.429.413-.67.973-.67 1.556 0 .583.241 1.143.67 1.556.428.412 1.01.644 1.616.644Z"
+                  ></path>
+                </svg>
+              </div>
+              <p>8465 W Sahara Avenue Suite 111-935, Las Vegas Nevada 89117</p>
+            </div>
+            <div class="info phone-info">
+              <div class="contact-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M3.62 7.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V17c0 .55-.45 1-1 1C7.61 18 0 10.39 0 1c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"
+                  ></path>
+                </svg>
+              </div>
+              <p>(702) 426-0025</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-header">
+            <h2 class="fw-bold">Contact Us</h2>
+            <p>
+              Tell us a little about yourself, and we will get in touch in under
+              5 minutes.
+            </p>
+          </div>
+          <form action="">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
+              <input
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="Your Number"
+              />
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+            />
+            <input
+              type="number"
+              id="mc"
+              name="mc"
+              placeholder="MC or DOT Number"
+            />
+            <input
+              type="number"
+              id="trucks"
+              name="trucks"
+              placeholder="Number of Trucks"
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message (Optional)"
+              rows="6"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <iframe class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.967841414002!2d-115.27867112428122!3d36.142996272441735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c098e7d1327f%3A0x7e213cbc95457c56!2s8465%20W%20Sahara%20Ave%20111%20935!5e0!3m2!1sen!2set!4v1694343871844!5m2!1sen!2set"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <Footer />
+</Layout>

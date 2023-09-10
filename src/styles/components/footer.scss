@@ -1,7 +1,8 @@
 @import "../global";
 
 footer {
-  background-color: $clr-primary-100;
+  background-color: $clr-neutral-800;
+  color: $clr-neutral-100;
   width: 100%;
   display: grid;
   border-bottom: 2px solid rgb(255 255 255 / 20%);
@@ -14,6 +15,7 @@ footer {
   }
 
   .address {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
@@ -29,7 +31,7 @@ footer {
   .socials {
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: -45px;
     translate: -50% 0;
     display: flex;
     align-items: center;
@@ -87,7 +89,7 @@ footer {
     }
 
     .socials {
-      position: static;
+      position: sticky;
     }
 
     //   footer.bottom {
