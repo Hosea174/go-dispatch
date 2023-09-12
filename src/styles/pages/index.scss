@@ -6,13 +6,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   .wrapper {
     position: relative;
     padding-top: 10rem;
     color: $clr-neutral-900;
     min-height: 110vh;
-    
+
     .hero-text {
       width: 50%;
       position: absolute;
@@ -154,6 +154,10 @@
     }
 
     .phone-mockup {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
       margin-inline: auto;
     }
   }
@@ -393,7 +397,7 @@
       display: flex;
       gap: $size-500;
       margin: 7rem auto 3rem;
-      width: fit-content;
+      justify-content: center;
 
       .proof-btn {
         padding: 0.9rem 1.5rem;
@@ -414,7 +418,12 @@
   @media (max-width: 700px) {
     .proof-wrapper .proof-btn-wrapper {
       flex-direction: column;
-      width: 80%;
+      align-items: center;
+      
+      .proof-btn {
+        width: 300px;
+        padding-inline: .3rem;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/pages/contact.scss";
 ---
@@ -88,19 +88,26 @@ import "../styles/pages/contact.scss";
               5 minutes.
             </p>
           </div>
-          <form action="">
+          <form
+            action="https://formsubmit.co/hossaena2018@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <div class="input-wrapper">
               <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Your Name"
+                required
               />
               <input
                 type="tel"
-                id="number"
-                name="number"
+                id="phone"
+                name="phone"
                 placeholder="Your Number"
+                required
               />
             </div>
             <input
@@ -108,18 +115,21 @@ import "../styles/pages/contact.scss";
               id="email"
               name="email"
               placeholder="Your Email"
+              required
             />
             <input
               type="number"
               id="mc"
               name="mc"
               placeholder="MC or DOT Number"
+              required
             />
             <input
               type="number"
               id="trucks"
               name="trucks"
               placeholder="Number of Trucks"
+              required
             />
             <textarea
               id="message"
@@ -130,7 +140,8 @@ import "../styles/pages/contact.scss";
           </form>
         </div>
       </div>
-      <iframe class="google-map"
+      <iframe
+        class="google-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.967841414002!2d-115.27867112428122!3d36.142996272441735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c098e7d1327f%3A0x7e213cbc95457c56!2s8465%20W%20Sahara%20Ave%20111%20935!5e0!3m2!1sen!2set!4v1694343871844!5m2!1sen!2set"
         width="600"
         height="450"
