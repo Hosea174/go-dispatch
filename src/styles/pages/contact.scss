@@ -2,8 +2,19 @@
 
 header {
   background-color: transparent;
-  .header-wrapper .nav-links .nav-link {
-    color: $clr-neutral-100;
+  .header-wrapper .nav-links {
+    .nav-link {
+      color: $clr-neutral-100;
+    }
+    
+    @media (max-width: 1117px) {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(15px);
+      .nav-link {
+        color: $clr-neutral-900;
+      }
+      
+    }
   }
 }
 
