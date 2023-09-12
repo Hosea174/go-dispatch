@@ -1,6 +1,6 @@
 ---
+import favicon from "../assets/godispatch-favicon.ico";
 import "../styles/global.scss";
-
 interface Props {
   title: string;
 }
@@ -13,11 +13,7 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../src/assets/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href={favicon} type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,6 +24,11 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <meta
+      name="description"
+      content="Welcome to GoDispatch - Your trusted partner in the trucking industry. We specialize in connecting trucking businesses with high-paying loads that outperform traditional load boards. Our comprehensive services and dedicated team ensure a stress-free and profitable trucking experience. Join us in revolutionizing the way you transport goods."
+    />
+
     <title>{title}</title>
   </head>
   <body>

@@ -2,9 +2,8 @@
 
 header {
   background-color: transparent;
-  .nav-link {
-    color: $clr-neutral-100 !important;
-
+  .header-wrapper .nav-links .nav-link {
+    color: $clr-neutral-100;
   }
 }
 

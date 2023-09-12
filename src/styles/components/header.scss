@@ -23,38 +23,38 @@ header {
     .nav-links {
       display: flex;
       gap: $size-600;
-    }
-
-    .nav-link {
-      position: relative;
       list-style: none;
       color: $clr-neutral-900;
       font-size: $fs-small;
-      transition: all 0.5s ease;
-      cursor: pointer;
 
-      a {
-        padding-bottom: .7rem;
+      .nav-link {
+        position: relative;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        a {
+          padding-bottom: 0.7rem;
+        }
+        &:hover {
+          color: $clr-primary-500;
+        }
       }
-      &:hover {
-        color: $clr-primary-500;
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -0.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0.15rem;
+        background-color: $clr-primary-500;
+        transition: all 0.5s ease;
       }
-    }
 
-    .nav-link::after {
-      content: "";
-      position: absolute;
-      bottom: -0.2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 0.15rem;
-      background-color: $clr-primary-500;
-      transition: all 0.5s ease;
-    }
-
-    .nav-link:hover::after {
-      width: 90%;
+      .nav-link:hover::after {
+        width: 90%;
+      }
     }
 
     .nav-buttons {
