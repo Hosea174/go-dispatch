@@ -1,12 +1,15 @@
 @import "../global";
 
 header {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 5;
-  padding-block: 2rem;
+  padding-block: 1.2rem;
+
   .header-wrapper {
     width: 100%;
     display: flex;
@@ -25,11 +28,14 @@ header {
     .nav-link {
       position: relative;
       list-style: none;
-      color: #fff;
+      color: $clr-neutral-900;
       font-size: $fs-small;
       transition: all 0.5s ease;
       cursor: pointer;
 
+      a {
+        padding-bottom: .7rem;
+      }
       &:hover {
         color: $clr-primary-500;
       }
@@ -38,7 +44,7 @@ header {
     .nav-link::after {
       content: "";
       position: absolute;
-      bottom: -0.3rem;
+      bottom: -0.2rem;
       left: 50%;
       transform: translateX(-50%);
       width: 0;
@@ -57,7 +63,7 @@ header {
     }
 
     .nav-toggler {
-      border: 3px solid #fff;
+      border: 3px solid $clr-neutral-900;
       padding: 5px;
       background-color: transparent;
       cursor: pointer;
@@ -69,7 +75,7 @@ header {
     .nav-toggler span:after {
       width: 20px;
       height: 3px;
-      background-color: #fff;
+      background-color: $clr-neutral-900;
       display: block;
       transition: 0.3s;
     }

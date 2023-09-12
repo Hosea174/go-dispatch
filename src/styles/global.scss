@@ -5,10 +5,11 @@ $clr-primary-500: #ff4342;
 $clr-primary-200: #eb8181;
 $clr-primary-100: #ffefef;
 $clr-primary-50: #fdf7f7;
+// $clr-primary-50: #fdf7f7;
 
 // Neutral colors
-$clr-neutral-900: #002438;
-$clr-neutral-800: #013C4E;
+$clr-neutral-900: #270000;
+$clr-neutral-800: #013c4e;
 $clr-neutral-100: #ffffff;
 
 // font families
@@ -141,11 +142,11 @@ a {
 
 .fs-primary-header {
   font-family: $ff-header;
-  font-size: clamp($fs-primary-header, 6vw, 4rem);
-  line-height: 134%;
-  color: $clr-neutral-100;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: clamp($fs-primary-header, 3.6vw, 3rem);
+  line-height: 114%;
+  color: $clr-neutral-900;
+  text-transform: capitalize;
+  // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .fs-secondary-header {
@@ -185,4 +186,3 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #be2a2a;
 }
-

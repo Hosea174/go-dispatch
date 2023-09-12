@@ -1,5 +1,13 @@
 @import "../global";
 
+header {
+  background-color: transparent;
+  .nav-link {
+    color: $clr-neutral-100 !important;
+
+  }
+}
+
 .contact-hero-section {
   min-height: 600px;
   background-image: url("../../assets/contact-banner.svg");
@@ -15,7 +23,7 @@
     h1,
     p {
       margin-bottom: $size-300;
-      text-shadow: none;
+      color: $clr-neutral-100;
     }
 
     h1 {

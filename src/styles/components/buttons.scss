@@ -1,7 +1,7 @@
 @import "../global";
 
 button {
-  border-radius: 50px;
+  // border-radius: 5px;
   padding: 0.7rem 1.5rem;
   outline: none;
   display: flex;
@@ -10,7 +10,12 @@ button {
   text-transform: capitalize;
   justify-content: center;
   cursor: pointer;
-
+  .btn-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
   &.btn-primary {
     background-color: $clr-primary-500;
     color: $clr-primary-900;
@@ -21,8 +26,12 @@ button {
       transition: transform 0.3s ease;
     }
 
-    &:hover img {
-      transform: rotate(0);
+    &:hover {
+      background-color: lighten($clr-primary-500, 3%);
+      
+      img {
+        transform: rotate(0);
+      }
     }
   }
 
@@ -33,23 +42,30 @@ button {
     flex-direction: row-reverse;
     transition: all 0.2s ease-in-out;
 
-    &:hover,
-    &:focus {
-      background-color: $clr-primary-500;
-      color: $clr-primary-900;
+    &:hover.studies-btn,
+    &:focus.studies-btn {
+      color: $clr-primary-500 !important;
+      background-color: $clr-neutral-100;
+      img {
+        content: url("../../assets/btn-arrow-red.svg");
+      }
     }
 
     &.nav-btn:hover,
     &.nav-btn:focus {
+      background-color: $clr-primary-500;
+      color: $clr-neutral-100;
       img {
-        content: url("../../assets/call-icon-black.svg");
+        content: url("../../assets/call-icon-white.svg");
       }
     }
 
-    &.hero-btn:hover,
-    &.hero-btn:focus {
+    &.proof-btn:hover,
+    &.proof-btn:focus {
+      background-color: $clr-primary-500;
+      color: $clr-neutral-100;
       img {
-        content: url("../../assets/play-ico-black.svg");
+        content: url("../../assets/btn-arrow-white.svg");
       }
     }
   }

@@ -1,12 +1,12 @@
 @import "../global";
 
 footer {
-  background-color: $clr-neutral-800;
-  color: $clr-neutral-100;
+  background-color: $clr-primary-100;
+  color: $clr-neutral-900;
   width: 100%;
   display: grid;
   border-bottom: 2px solid rgb(255 255 255 / 20%);
-  padding-block: $size-500;
+  padding-block: $size-700;
   font-size: $fs-small;
 
   img.footer-logo {

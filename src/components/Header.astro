@@ -1,5 +1,5 @@
 ---
-import arrowIcon from "../assets/btn-arrow.svg";
+import arrowIconWhite from "../assets/btn-arrow-white.svg";
 import callIcon from "../assets/call-icon.svg";
 import logo from "../assets/GoDispatch-logo.svg";
 import "../styles/components/header.scss";
@@ -10,27 +10,33 @@ import Button from "../components/Button.astro";
   <div class="container header-wrapper">
     <nav class="navbar">
       <ul class="nav-links">
-        <li class="nav-link" style="--i: 0"><a href="#"></a>Home</li>
-        <li class="nav-link" style="--i: 1"><a href="#"></a>About</li>
-        <li class="nav-link" style="--i: 2"><a href="#"></a>Contact</li>
-        <ll class="nav-link" style="--i: 3"><a href="#"></a>Pricing</ll>
+        <li class="nav-link" style="--i: 0"><a href="/">Home</a></li>
+        <li class="nav-link" style="--i: 1"><a href="/about">About</a></li>
+        <li class="nav-link" style="--i: 2"><a href="/contact">Contact</a></li>
+        <ll class="nav-link" style="--i: 3"><a href="/pricing">Pricing</a></ll>
       </ul>
     </nav>
     <button class="nav-toggler">
       <span></span>
     </button>
-    <a href="#"><img src={logo} alt="godispatch logo" class="logo" /></a>
+    <a href="/"><img src={logo} alt="godispatch logo" class="logo" /></a>
     <div class="nav-buttons">
-      <Button
-        text="Start Free Trial"
-        icon={arrowIcon}
-        class="btn-primary fw-bold fs-small nav-btn"
-      />
-      <Button
-        text="702-426-0025"
-        icon={callIcon}
-        class="btn-secondary fw-bold fs-small nav-btn"
-      />
+      <a href="/contact">
+        <Button
+          text="Start Free Trial"
+          icon={arrowIconWhite}
+          class="btn-primary fw-bold fs-small nav-btn"
+          buttonStyle="color: white;"
+        />
+      </a>
+
+      <a href="tel:7024260025">
+        <Button
+          text="702-426-0025"
+          icon={callIcon}
+          class="btn-secondary fw-bold fs-small nav-btn"
+        />
+      </a>
     </div>
   </div>
 </header>

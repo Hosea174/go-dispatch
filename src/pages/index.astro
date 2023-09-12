@@ -3,13 +3,12 @@ import arrowIconWhite from "../assets/btn-arrow-white.svg";
 import arrowIcon from "../assets/btn-arrow.svg";
 import phoneMockup from "../assets/chat-mockup.png";
 import clientsIcon from "../assets/clients-icon.svg";
-import playIcon from "../assets/play-ico.svg";
+import arrowIconRed from "../assets/btn-arrow-red.svg";
 import revenueIcon from "../assets/revenue-icon.svg";
 import loadsIcon from "../assets/truck-icon.svg";
 
 import graph1Img from "../assets/graph-1.png";
 import graph2Img from "../assets/graph-2.png";
-import graph3Img from "../assets/graph-3.png";
 import step1Img from "../assets/step-1-img.png";
 import step2Img from "../assets/step-2-img.png";
 import step3Img from "../assets/step-3-img.png";
@@ -17,8 +16,8 @@ import step3Img from "../assets/step-3-img.png";
 import Accordion from "../components/Accordion.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/pages/index.scss";
 ---
@@ -29,27 +28,20 @@ import "../styles/pages/index.scss";
     <!-- HERO SECTION -->
     <section class="hero-section">
       <div class="container wrapper">
-        <h1 class="fs-primary-header fw-bold">
-          Supercharge your trucking revenue with <span
-            class="highlight"
-            style="color: #240000">Premium</span
-          > Dispatch services
-        </h1>
-        <p>
-          We bring you the highest paying freight to your truck. Guaranteed
-          results or you DON'T pay us!
-        </p>
+        <div class="hero-text">
+          <h1 class="fs-primary-header fw-bold">
+            Truck <span class="highlight" style="color: #240000">Dispatch</span>
+            Service! Get loads that pay 15% higher than load boards
+          </h1>
+          <p>
+            We bring you the highest paying freight to your truck. Guaranteed
+            results or you DON'T pay us!
+          </p>
 
-        <div class="hero-btn-wrapper">
           <Button
             text="Start Free Trial"
             icon={arrowIcon}
             class="btn-primary fw-bold fs-small hero-btn"
-          />
-          <Button
-            text="Watch Promo"
-            icon={playIcon}
-            class="btn-secondary fw-bold fs-small hero-btn"
           />
         </div>
         <iframe
@@ -64,8 +56,7 @@ import "../styles/pages/index.scss";
       <div class="container service-wrapper">
         <div class="services-description">
           <h2 class="fs-secondary-header fw-bold">
-            <span class="highlight" style="color: #002438">Revolutionizing</span
-            > Trucking for a More Sustainable Future
+            What We <span class="highlight" style="color: #fdf7f7">Do</span>
           </h2>
           <p class="services-text">
             We make running your trucking business easy, fun, and profitable.
@@ -83,7 +74,7 @@ import "../styles/pages/index.scss";
                     height="32"
                     fill="none"
                   >
-                    <path 
+                    <path
                       fill="#FF4342"
                       d="M43.568 6.87h-6.476V2.82c-.002-.748-.346-1.464-.957-1.993C35.525.3 34.696.001 33.833 0h-22.67C10.3 0 9.471.298 8.86.827c-.611.528-.955 1.245-.957 1.992V5.96h8.086v3.569H3.612v3.569h4.29v5.212H0v3.569h7.902v5.458h4.703c.207-1.2.905-2.295 1.967-3.087 1.062-.792 2.417-1.227 3.82-1.227 1.401 0 2.756.435 3.818 1.227 1.062.792 1.76 1.888 1.967 3.087h8.973c0-.018 0-.018.02-.035.157-.92.606-1.782 1.298-2.491.693-.71 1.6-1.237 2.621-1.524.59-.18 1.211-.27 1.836-.268 1.395.002 2.742.435 3.8 1.22 1.06.785 1.76 1.87 1.976 3.063h4.517V11.759c-.002-1.296-.598-2.538-1.657-3.454-1.059-.917-2.495-1.433-3.993-1.435Zm1.527 10.225h-8.003v-6.656h6.476c.404.002.791.142 1.077.39.285.246.447.58.45.93v5.336Z"
                     ></path>
@@ -185,41 +176,17 @@ import "../styles/pages/index.scss";
               </li>
             </div>
           </ul>
-          <Button
-            text="Start 14 Days Free Trial"
-            icon={arrowIconWhite}
-            class="btn-primary fw-bold fs-small"
-            buttonStyle="color: white;"
-          />
+          <a href="/contact">
+            <Button
+              text="Start 14 Days Free Trial"
+              icon={arrowIconWhite}
+              class="btn-primary fw-bold fs-small"
+              buttonStyle="color: white;"
+            />
+          </a>
         </div>
 
         <img class="phone-mockup" src={phoneMockup} alt="A phone chat mockup" />
-      </div>
-    </section>
-
-    <!-- CASE STUDIES SECTION -->
-    <section class="studies-section">
-      <div class="container studies-wrapper">
-        <h2 class="fs-secondary-header fw-bold">
-          Explore <span
-            class="highlight"
-            style="background-color: #ffffff; color:#ff4342">proven</span
-          > ways to work more efficiently
-        </h2>
-        <p>
-          Learn how we have managed to help trucking businesses like yours
-          increase their revenue and streamline their operations.
-        </p>
-        <Button
-          text="Browse Case Studies"
-          icon={arrowIconWhite}
-          class="btn-secondary fw-bold fs-small"
-          buttonStyle="color: white; border-color: white; flex-direction: row;"
-        />
-        <iframe
-          class="down-arrow"
-          src="https://lottie.host/?file=bea6e181-adb5-471e-b3c7-f573a808f5bb/I6AZEYsPlR.lottie"
-        ></iframe>
       </div>
     </section>
 
@@ -227,15 +194,13 @@ import "../styles/pages/index.scss";
     <section class="process-section">
       <div class="container steps-wrapper">
         <h2 class="fs-secondary-header fw-bold">
-          Our <span class="highlight" style="color: #FFF0F0">Simple</span> 3-step
-          Process Makes Dispatching <span
-            class="highlight"
-            style="color: #FFF0F0">Easy</span
+          How GoDispatch <span class="highlight" style="color: #FFF0F0"
+            >Works</span
           >
         </h2>
         <p class="process-description">
           Simple and quick 3 step processes to get started. Takes 5 minutes or
-          less...and NO contracts!
+          less... and NO contracts!
         </p>
         <div class="process-container">
           <div class="step step-1">
@@ -276,11 +241,41 @@ import "../styles/pages/index.scss";
           </div>
         </div>
 
-        <Button
-          text="CONTACT US"
-          icon={arrowIconWhite}
-          class="btn-primary fw-bold fs-small"
-        />
+        <a href="/contact">
+          <Button
+            text="LET'S GET STARTED "
+            icon={arrowIconWhite}
+            class="btn-primary fw-bold fs-small"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section class="studies-section">
+      <div class="container studies-wrapper">
+        <h2 class="fs-secondary-header fw-bold">
+          Explore <span
+            class="highlight"
+            style="background-color: #ffffff; color:#ff4342">proven</span
+          > ways to work more efficiently
+        </h2>
+        <p>
+          Learn how we have managed to help trucking businesses like yours
+          increase their revenue and streamline their operations.
+        </p>
+        <a href="/casestudies">
+          <Button
+            text="Browse Case Studies"
+            icon={arrowIconWhite}
+            class="btn-secondary fw-bold fs-small | studies-btn"
+            buttonStyle="color: white; border-color: white; flex-direction: row;"
+          />
+        </a>
+        <iframe
+          class="down-arrow"
+          src="https://lottie.host/?file=bea6e181-adb5-471e-b3c7-f573a808f5bb/I6AZEYsPlR.lottie"
+        ></iframe>
       </div>
     </section>
 
@@ -288,10 +283,10 @@ import "../styles/pages/index.scss";
     <section class="proof-section">
       <div class="container proof-wrapper">
         <h2 class="fs-secondary-header fw-bold">
-          Reliable Routes <span
+          Reliable Routes, <span
             class="highlight"
             style="background-color: #ff4342; color:#fdf7f7">Remarkable</span
-          >, Results
+          > Results
         </h2>
         <p>
           <span style="color: #ff4342">
@@ -304,22 +299,26 @@ import "../styles/pages/index.scss";
         <div class="graphs">
           <img src={graph1Img} alt="" class="graph" />
           <img src={graph2Img} alt="" class="graph" />
-          <img src={graph3Img} alt="" class="graph" />
+          <!-- <img src={graph3Img} alt="" class="graph" /> -->
         </div>
 
         <div class="proof-btn-wrapper">
-          <Button
-            text="Get More Loads, Less Hassel"
-            icon={arrowIconWhite}
-            class="btn-primary fw-bold fs-small | proof-btn"
-            buttonStyle="color: white;"
-          />
+          <a href="/contact">
+            <Button
+              text="Get More Loads, Less Hassel"
+              icon={arrowIconWhite}
+              class="btn-primary fw-bold fs-small | proof-btn"
+              buttonStyle="color: white;"
+            />
+          </a>
 
-          <Button
-            text="Services and Pricing"
-            icon={playIcon}
-            class="btn-secondary fw-bold fs-small | proof-btn"
-          />
+          <a href="/pricing">
+            <Button
+              text="Services and Pricing"
+              icon={arrowIconRed}
+              class="btn-secondary fw-bold fs-small | proof-btn"
+            />
+          </a>
         </div>
       </div>
     </section>
