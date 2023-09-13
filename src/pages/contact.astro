@@ -88,10 +88,8 @@ import "../styles/pages/contact.scss";
               5 minutes.
             </p>
           </div>
-          <form
-            action="https://formsubmit.co/info@godispatch.io"
-            method="POST"
-          >
+          <form action="https://formsubmit.co/info@godispatch.io" method="POST">
+            <input type="hidden" name="_next" value="/contact" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <div class="input-wrapper">
