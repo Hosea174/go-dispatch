@@ -19,8 +19,8 @@
       left: 48%;
       padding: 2rem;
       border-radius: 15px;
-      background-color: #ffffff54;
-
+      background-color: #ffffff5f;
+      backdrop-filter: blur(5px);
       p,
       h1 {
         margin-bottom: $size-500;
