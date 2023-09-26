@@ -1,0 +1,65 @@
+---
+import truckImg from "../../assets/about-hero-bg.webp";
+import BlogCard from "../../components/BlogCard.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import "../../styles/pages/blogs.scss";
+---
+
+<Layout title="GoDispatch: Read about trucking">
+  <Header />
+  <main>
+    <section class="blogs-hero-section">
+      <div class="blogs-hero-wrapper container">
+        <h1 class="fw-bold">Explore Our Blogs on Trucking Insights</h1>
+      </div>
+    </section>
+
+    <section class="blogs-section">
+      <div class="blogs-wrapper container">
+        <h2 class="fs-secondary-header fw-bold">Latest Articles</h2>
+
+        <div class="blogs-grid">
+          <BlogCard
+            altText="truck"
+            image={truckImg}
+            title="How to make money from your trucking business"
+            description="Discover the road to financial success in the trucking industry. Our in-depth guide explores the various strategies and opportunities for making money in the world of trucking."
+            date="9/26/2023"
+          />
+          <BlogCard
+            altText="truck"
+            image={truckImg}
+            title="How to make money from your trucking business"
+            description="Discover the road to financial success in the trucking industry. Our in-depth guide explores the various strategies and opportunities for making money in the world of trucking."
+            date="9/26/2023"
+          />
+          <BlogCard
+            altText="truck"
+            image={truckImg}
+            title="How to make money from your trucking business"
+            description="Discover the road to financial success in the trucking industry. Our in-depth guide explores the various strategies and opportunities for making money in the world of trucking."
+            date="9/26/2023"
+          />
+          <BlogCard
+            altText="truck"
+            image={truckImg}
+            title="How to make money from your trucking business"
+            description="Discover the road to financial success in the trucking industry. Our in-depth guide explores the various strategies and opportunities for making money in the world of trucking."
+            date="9/26/2023"
+          />
+          <BlogCard
+            altText="truck"
+            image={truckImg}
+            title="How to make money from your trucking business"
+            description="Discover the road to financial success in the trucking industry. Our in-depth guide explores the various strategies and opportunities for making money in the world of trucking."
+            date="9/26/2023"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,55 @@
+@import "../global";
+
+.blog {
+  background-color: white;
+
+
+  .img-wrapper {
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+
+  .blog-content {
+    padding: 0.85rem 1.2rem 2rem;
+
+    .blog-title {
+      font-size: $fs-600;
+      line-height: 130%;
+      margin-block: $size-400;
+    }
+
+    .blog-date {
+      font-size: $fs-300;
+      opacity: 0.75;
+    }
+
+    .blog-description {
+      font-size: $fs-300;
+      margin-bottom: $size-500;
+    }
+
+    .blog-link {
+      padding: 10px 20px;
+      font-size: $fs-400;
+      background-color: $clr-primary-500;
+      color: #ffffff;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .blog-link:hover {
+      background-color: #ff6b6a;
+      transition: all ease-in-out 1s;
+    }
+  }
+}

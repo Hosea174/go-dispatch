@@ -1,0 +1,26 @@
+---
+import "../styles/components/blogCard.scss";
+
+interface Props {
+  image: string;
+  title: string;
+  description: string;
+  altText: string;
+  date: string;
+}
+
+const { image, title, description, altText, date } = Astro.props;
+---
+
+<div class="blog">
+  <div class="img-wrapper">
+    <img src={image} alt={altText} />
+  </div>
+  <div class="blog-content">
+    <h3 class="blog-title fw-bold">{title}</h3>
+
+    <p class="blog-date">{date}</p>
+    <p class="blog-description">{description}</p>
+    <a href="#" class="blog-link">Read more</a>
+  </div>
+</div>
