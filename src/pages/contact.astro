@@ -25,8 +25,8 @@ import "../styles/pages/contact.scss";
           <div class="details-header">
             <h2 class="fw-bold">Let's get started</h2>
             <p>
-              Tell us a little about yourself, and we will get in touch in under
-              5 minutes.
+              Please share some information about yourself, and we will reach
+              out to you shortly.
             </p>
           </div>
           <div class="contact-info">
@@ -88,49 +88,53 @@ import "../styles/pages/contact.scss";
               5 minutes.
             </p>
           </div>
-          <form action="https://formsubmit.co/info@godispatch.io" method="POST">
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
+          <!-- <form action="https://formsubmit.co/info@godispatch.io" method="POST"> -->
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScZ4HwO4pw4RaeLWYWayEBpRCnMDsPNIYM9SGw7ABYEYkbx9A/formResponse"
+            method="POST"
+          >
+            <!-- <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" /> -->
             <div class="input-wrapper">
               <input
                 type="text"
                 id="name"
-                name="name"
+                name="entry.1030581877"
                 placeholder="Your Name"
                 required
               />
               <input
                 type="tel"
                 id="phone"
-                name="phone"
-                placeholder="Your Number"
+                name="entry.1166682631"
+                placeholder="Your Phone"
                 required
               />
             </div>
             <input
               type="email"
               id="email"
-              name="email"
+              name="entry.330952856"
               placeholder="Your Email"
               required
             />
             <input
               type="number"
               id="mc"
-              name="mc"
+              name="entry.1997810523"
               placeholder="MC or DOT Number"
               required
             />
             <input
               type="number"
               id="trucks"
-              name="trucks"
+              name="entry.2132270181"
               placeholder="Number of Trucks"
               required
             />
             <textarea
               id="message"
-              name="message"
+              name="entry.1004136299"
               placeholder="Your message (Optional)"
               rows="6"></textarea>
             <button type="submit">Send Message</button>
