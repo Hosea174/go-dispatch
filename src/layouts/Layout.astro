@@ -28,7 +28,25 @@ const { title } = Astro.props;
       name="description"
       content="Welcome to GoDispatch - Your trusted partner in the trucking industry. We specialize in connecting trucking businesses with high-paying loads that outperform traditional load boards. Our comprehensive services and dedicated team ensure a stress-free and profitable trucking experience. Join us in revolutionizing the way you transport goods."
     />
-
+    <script type="text/javascript">
+      window.smartlook ||
+        (function (d) {
+          var o = (smartlook = function () {
+              o.api.push(arguments);
+            }),
+            h = d.getElementsByTagName("head")[0];
+          var c = d.createElement("script");
+          o.api = new Array();
+          c.async = true;
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.src = "https://web-sdk.smartlook.com/recorder.js";
+          h.appendChild(c);
+        })(document);
+      smartlook("init", "315f649693875828ad7ef4b89e60af6f8fb52773", {
+        region: "eu",
+      });
+    </script>
     <title>{title}</title>
   </head>
   <body>
