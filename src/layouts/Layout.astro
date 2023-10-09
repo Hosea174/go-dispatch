@@ -23,6 +23,20 @@ const { title } = Astro.props;
       name="description"
       content="Welcome to GoDispatch - Your trusted partner in the trucking industry. We specialize in connecting trucking businesses with high-paying loads that outperform traditional load boards. Our comprehensive services and dedicated team ensure a stress-free and profitable trucking experience. Join us in revolutionizing the way you transport goods."
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWFM58KBLY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NWFM58KBLY");
+    </script>
+
     <script type="text/javascript">
       window.smartlook ||
         (function (d) {
@@ -64,7 +78,7 @@ const { title } = Astro.props;
       >
     </noscript>
     <!--  Clickcease.com tracking-->
-    
+
     <slot />
   </body>
 </html>
