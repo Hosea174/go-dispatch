@@ -12,7 +12,8 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGWBFNS24E"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGWBFNS24E"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -22,7 +23,7 @@ const { title } = Astro.props;
 
       gtag("config", "G-RGWBFNS24E");
     </script>
-
+    <!-- google tag end -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href={favicon} type="image/x-icon" />
@@ -35,7 +36,7 @@ const { title } = Astro.props;
       name="description"
       content="Welcome to GoDispatch - Your trusted partner in the trucking industry. We specialize in connecting trucking businesses with high-paying loads that outperform traditional load boards. Our comprehensive services and dedicated team ensure a stress-free and profitable trucking experience. Join us in revolutionizing the way you transport goods."
     />
-    
+
     <!-- smartlook -->
     <script type="text/javascript">
       window.smartlook ||
@@ -56,6 +57,7 @@ const { title } = Astro.props;
         region: "eu",
       });
     </script>
+    <!-- smartlook end-->
     <title>{title}</title>
   </head>
   <body>
@@ -77,7 +79,7 @@ const { title } = Astro.props;
         /></a
       >
     </noscript>
-    <!--  Clickcease.com tracking-->
+    <!--  Clickcease.com tracking end-->
 
     <slot />
   </body>
